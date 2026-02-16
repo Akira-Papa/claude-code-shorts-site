@@ -41,7 +41,7 @@ export default function VideoGrid({ videos }: VideoGridProps) {
       <SearchBar value={searchQuery} onChange={setSearchQuery} />
       <TagFilter
         tags={allTags}
-        selectedTags={selectedTags}
+        selected={selectedTags}
         onChange={setSelectedTags}
       />
 
