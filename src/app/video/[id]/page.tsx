@@ -51,7 +51,7 @@ export default async function VideoPage({ params }: Props) {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* メインコンテンツ */}
         <div className="lg:col-span-2">
-          <VideoPlayer videoId={video.id} youtubeId={video.youtubeId} title={video.title} />
+          <VideoPlayer youtubeUrl={video.youtubeUrl} title={video.title} />
 
           <div className="mt-6 space-y-4">
             <h1 className="text-2xl md:text-3xl font-bold">{video.title}</h1>
