@@ -40,7 +40,7 @@ export function getYouTubeThumbnail(url: string): string | null {
 
   for (const pattern of patterns) {
     const match = url.match(pattern);
-    if (match?.[1]) return `https://img.youtube.com/vi/${match[1]}/mqdefault.jpg`;
+    if (match?.[1]) return `https://img.youtube.com/vi/${match[1]}/maxresdefault.jpg`;
   }
   return null;
 }
